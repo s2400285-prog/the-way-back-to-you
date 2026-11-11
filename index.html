@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a10">
+  <meta name="description" content="A love story that doesn't end when the movie does. For Baby Julie, with love from James.">
+  <title>The Way Back to You · For Baby Julie</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/vendor/gsap.min.js"></script>
+  <script defer src="js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="js/vendor/lenis.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="star" viewBox="0 0 32 32"><path d="M16 0c0 11-5 16-16 16 11 0 16 5 16 16 0-11 5-16 16-16C21 16 16 11 16 0Z" fill="currentColor"/></symbol>
+      <symbol id="play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor"/></symbol>
+      <symbol id="pause" viewBox="0 0 24 24"><path d="M8 5v14m8-14v14" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="arrow" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+      <symbol id="replay" viewBox="0 0 24 24"><path d="M6 9a7 7 0 1 1 0 6m0-12v6h6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+      <filter id="soft-light"><feGaussianBlur stdDeviation="8"/></filter>
+      <radialGradient id="flare"><stop stop-color="#fff1cd"/><stop offset=".25" stop-color="#f7bd78" stop-opacity=".7"/><stop offset="1" stop-color="#f7a869" stop-opacity="0"/></radialGradient>
+    </defs>
+  </svg>
+
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="wipe" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <a class="wordmark" href="#opening" aria-label="The Way Back to You, opening titles">
+      <svg aria-hidden="true"><use href="#star"/></svg>
+      <span>The Way Back to You</span>
+    </a>
+    <span class="masthead-dedication">A film for Baby Julie</span>
+  </header>
+
+  <section class="intro" id="opening" aria-labelledby="film-title">
+    <div class="intro-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="intro-content">
+      <p class="opening-line">“Some people make ordinary days feel like scenes worth remembering.”</p>
+      <div class="title-reveal">
+        <p class="eyebrow presenting">Presenting<span aria-hidden="true">…</span></p>
+        <h1 id="film-title">THE WAY BACK<br><em>TO YOU</em></h1>
+        <p class="film-subtitle">A Love Story That Doesn't End When the Movie Does.</p>
+        <p class="intro-dedication">Dedicated to my Baby Julie.</p>
+        <a class="action action-primary" id="enter-story" href="#first-shot"><svg aria-hidden="true"><use href="#play"/></svg> Enter our story</a>
+      </div>
+    </div>
+    <div class="intro-credit"><span></span> With love, James Traigo <span></span></div>
+  </section>
+
+  <main id="story">
+    <section class="scene first-shot" id="first-shot" aria-labelledby="first-title" data-scene="The opening shot">
+      <div class="scene-stage">
+        <div class="camera" aria-hidden="true">
+          <img class="backdrop" src="assets/opening.webp" alt="" width="768" height="512" fetchpriority="high">
+        </div>
+        <div class="scene-shade" aria-hidden="true"></div>
+        <div class="letterbox" aria-hidden="true"></div>
+        <div class="scene-content first-content">
+          <p class="eyebrow scene-index"><span></span> Scene 01 / The opening shot <span></span></p>
+          <h2 id="first-title" class="first-quote" tabindex="-1" aria-label="Of all the places I could have been, somehow, I found myself happiest beside you."><span id="typed-line" aria-hidden="true">Of all the places I could have been, somehow, I found myself <em>happiest beside you.</em></span></h2>
+          <p class="first-note">Baby Julie, I love how easy it is to be myself around you. I can tell you whatever’s on my mind or sit with you quietly and feel just as close. Somewhere along the way, being beside you became the part of my day I look forward to most.</p>
+        </div>
+        <a class="scroll-cue" href="#today"><span>Next scene</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="scene memory" id="today" aria-labelledby="today-title" data-scene="Today's little forever">
+      <div class="memory-copy">
+        <p class="eyebrow scene-index" data-reveal><span></span> Scene 02</p>
+        <h2 id="today-title" data-reveal>Today’s little <em>forever.</em></h2>
+        <div class="prose" data-reveal>
+          <p>Baby Julie, I was so happy spending time with you today. I keep going back to the little things. The look on your face when something made you smile. The way one thought turned into another until I forgot what we were talking about in the first place. Even the quiet moments felt easy with you there.</p>
+          <p>I wish I could remember every little thing we said. What I do remember is how often I caught myself thinking, <em>I’m really happy right here.</em> It feels a little silly to miss you this soon, but I do. If I could have asked today for anything more, it would’ve been a few extra minutes beside you.</p>
+        </div>
+      </div>
+      <div class="memory-still" data-reveal aria-hidden="true">
+        <div class="memory-window">
+          <div class="camera"><img class="backdrop" src="assets/memory.webp" alt="" width="768" height="512" loading="lazy"></div>
+          <svg class="lens-flare" viewBox="0 0 480 360" preserveAspectRatio="none">
+            <ellipse cx="400" cy="38" rx="180" ry="130" fill="url(#flare)" filter="url(#soft-light)"/>
+            <path d="M480 19 115 116l365-51z" fill="#f5c191" opacity=".12" filter="url(#soft-light)"/>
+            <circle cx="110" cy="253" r="25" fill="url(#flare)" opacity=".55"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene night" id="goodbye" aria-labelledby="night-title" data-scene="The distance after goodbye">
+      <div class="camera" aria-hidden="true"><img class="backdrop" src="assets/night.webp" alt="" width="768" height="512" loading="lazy"></div>
+      <div class="scene-shade" aria-hidden="true"></div>
+      <div class="clouds" aria-hidden="true"></div>
+      <div class="night-content">
+        <p class="eyebrow scene-index" data-reveal><span></span> Scene 03 / The distance after goodbye</p>
+        <h2 id="night-title" data-reveal>“Funny how a beautiful day can end, but the feeling of having you beside me <em>stays.</em>”</h2>
+        <article class="night-letter prose" data-reveal aria-label="A letter for Baby Julie">
+          <p class="salutation">My Baby Julie,</p>
+          <p>I thought I’d get home and do the usual things, but I keep pausing in the middle of them because something reminds me of you. I miss looking over and seeing your smile. I miss knowing that if a thought came into my head, I could just turn to you and say it. It’s funny how much I notice those little things once I’m home and the room gets quiet.</p>
+          <p>If I could go back to any part of today, I think I’d pick a moment when neither of us was in a hurry. I’d sit there a little longer and let you finish whatever you were telling me. Then I’d tell you how glad I was to be there. I thought it more than once today. I wish I had said it every time.</p>
+          <p>Tonight, I’m thanking God that He let our paths meet. There was a time when I had no idea who you were, and now you’re the person I want to tell first when something good happens. I’m grateful I get to know you slowly, little by little, and see the sides of you that come out when you feel comfortable.</p>
+          <p>I’m already looking forward to the next time I see you. I’ll probably have something silly to tell you by then. Before I get to any of it, I think I’ll just be happy to see your face again.</p>
+          <p class="signature">With love, <em>James</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scene photograph" id="one-frame" aria-labelledby="photo-title" data-scene="The one frame I want to keep">
+      <div class="photo-content">
+        <p class="eyebrow scene-index" data-reveal><span></span> Scene 04 <span></span></p>
+        <h2 id="photo-title" data-reveal>The one frame I <em>want to keep.</em></h2>
+        <figure class="photo-figure" data-reveal>
+          <div class="photo-perspective">
+            <div class="film-frame">
+              <div class="film-edge" aria-hidden="true"></div>
+              <div class="photo-window">
+                <img src="assets/julie.jpg" alt="A keepsake for James and Baby Julie" width="1200" height="800" loading="lazy">
+              </div>
+              <div class="film-edge" aria-hidden="true"></div>
+            </div>
+          </div>
+          <figcaption>“If I could pause one frame of my life, I would choose a moment where you’re beside me.”</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="scene promise" id="promise" aria-labelledby="promise-title" data-scene="My promise to you">
+      <div class="camera" aria-hidden="true"><img class="backdrop" src="assets/sunrise.webp" alt="" width="768" height="512" loading="lazy"></div>
+      <div class="scene-shade" aria-hidden="true"></div>
+      <svg class="sun-rays" viewBox="0 0 620 530" preserveAspectRatio="none" aria-hidden="true">
+        <g filter="url(#soft-light)" fill="#ffdcaa">
+          <path d="m492 187-287 333 326-315z" opacity=".20"/>
+          <path d="m500 178-492 123 507-86z" opacity=".19"/>
+          <path d="m501 182-392-168 420 147z" opacity=".17"/>
+        </g>
+      </svg>
+      <div class="promise-content">
+        <p class="eyebrow scene-index" data-reveal><span></span> Scene 05</p>
+        <h2 id="promise-title" data-reveal>My promise <em>to you.</em></h2>
+        <div class="prose" data-reveal>
+          <p>Baby Julie, I don’t need every day with you to be perfect. I want the ordinary ones, too. I want to keep making memories with you and learning what matters to you, even when the answer changes. When you tell me about a dream of yours, I want to remember it and ask how it’s going. And when a day feels heavy, I want to listen and ask what would help.</p>
+          <p><em lang="la">Ad astra.</em> To the stars. I hope you go after the things that make your eyes light up when you talk about them. I’d love to be there cheering you on.</p>
+          <p><em lang="la">In omnibus, gratias ago tibi.</em> In everything, I thank you. Thank you for making room for me in your days and for the kindness and love you show me in small ways. I want you to hear how much I appreciate you on ordinary days, too.</p>
+          <p class="promise-signature"><em lang="la">Semper te amabo.</em> <span>I will always love you.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene finale" id="finale" aria-labelledby="ending-title" data-scene="The final scene">
+      <div class="finale-content">
+        <svg class="ending-star" aria-hidden="true"><use href="#star"/></svg>
+        <h2 id="ending-title">THE END?</h2>
+        <div class="finale-reveal" id="finale-reveal">
+          <p class="ending-line">Maybe the movie ends here, Baby Julie, but my favorite story is the one I get to keep writing with you.</p>
+          <p class="ending-thanks">Thank you for today. Thank you for being part of my happiest memories. And if you ever wonder whether I miss you after we say goodbye, the answer is always yes.</p>
+          <p class="final-title">Until our next scene, <em>my Baby Julie.</em></p>
+          <a class="action" id="replay-story" href="#opening"><svg aria-hidden="true"><use href="#replay"/></svg> Play our story again</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <nav class="scene-nav" aria-label="Film scenes" hidden>
+    <a href="#first-shot" aria-label="Scene 1, The opening shot"></a>
+    <a href="#today" aria-label="Scene 2, Today's little forever"></a>
+    <a href="#goodbye" aria-label="Scene 3, The distance after goodbye"></a>
+    <a href="#one-frame" aria-label="Scene 4, The one frame I want to keep"></a>
+    <a href="#promise" aria-label="Scene 5, My promise to you"></a>
+    <a href="#finale" aria-label="The final scene"></a>
+  </nav>
+
+  <div class="sound-controls" hidden>
+    <p class="sound-status" id="sound-status" role="status"></p>
+    <button class="sound-button" id="sound-toggle" type="button" aria-label="Play music">
+      <svg aria-hidden="true"><use id="sound-icon" href="#play"/></svg>
+      <span id="sound-label">Play music</span>
+    </button>
+  </div>
+  <audio id="soundtrack" src="assets/music.mp3" preload="none" loop></audio>
+</body>
+</html>
